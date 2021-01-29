@@ -1,0 +1,20 @@
+<context>
+	<Resource name="jdbc/MysqlDB"
+			  auth="Container" 
+			  type="javax.sql.DataSource"
+			  driverClassName="com.mysql.jdbc.Driver"
+			  url="jdbc:mysql://localhost:3306/jspdb5"
+			  username="root"
+			  password="1234"
+			  maxActive="20" 
+   			  maxIdle="10" 
+   			  maxWait="-1"
+	/>
+</context>
+
+<!--
+name="jdbc/MysqlDB" 디비연동의 이름 이걸 가져다가 연결할거임
+서버가스타트되면 이게 불러와져서 디비연결이됨
+
+auth="Container" 관리자 아파치톰캣
+  -->			  
